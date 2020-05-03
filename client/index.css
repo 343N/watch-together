@@ -1,16 +1,49 @@
+:root{
+    --main-loading-background: #151515;
+    --main-background: #343a40;
+
+}
+
 navbar{
     position: absolute;
 }
 
 #main {
-    background-color: lightgray;
+    background-color: var(--main-loading-background);
     box-sizing: border-box;
+    animation-timing-function: linear;
+    animation-iteration-count: none;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    /* animation-play-state: ; */
     /* width: 100%; */
     
 }
 
 #loadingText {
-    background: -webkit-linear-gradient(60deg, #8cd0e5, #376888, #826b88, #de786a, #f8b976, #fcddc9);
-    -webkit-background-clip: text;
+    /* text-shadow: 0 0 0px black, 0 0 0px black, 0 0 0px black, 0 0 0px black; */
+    background: -webkit-linear-gradient(0deg, #8cd0e5, #376888, #826b88, #de786a, #f8b976, #fcddc9);    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation-name: loadingAnim;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes loadingAnim {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 145px;
+    }
+}
+
+@keyframes load {
+    0% {
+        background-color: var(--main-loading-background);
+    }
+    100% {
+        background-color: var(--main-background);
+    }
 }

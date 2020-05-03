@@ -1,0 +1,23 @@
+{
+  "name": "watch-together",
+  "version": "0.1.0",
+  "description": "A server/client pair for watching videos with your friends :)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/343N/watch-together"
+  },
+  "keywords": [
+    "video",
+    "together",
+    "watch"
+  ],
+  "author": "343N",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "latest"
+  }
+}

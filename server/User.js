@@ -1,4 +1,4 @@
-require('./ID.js')
+const ID = require('./ID.js');
 
 class User {
 
