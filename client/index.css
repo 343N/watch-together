@@ -1,0 +1,16 @@
+navbar{
+    position: absolute;
+}
+
+#main {
+    background-color: lightgray;
+    box-sizing: border-box;
+    /* width: 100%; */
+    
+}
+
+#loadingText {
+    background: -webkit-linear-gradient(60deg, #8cd0e5, #376888, #826b88, #de786a, #f8b976, #fcddc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
